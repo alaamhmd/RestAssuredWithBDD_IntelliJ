@@ -13,7 +13,7 @@ public class PageBase {
 
 
     protected String path;
-    public List<String> attributeValue;
+
 
     public void setBaseURL(String url) {
 
@@ -35,7 +35,7 @@ public class PageBase {
     }
     public List<String> getSpecificAttributeValue(String attributeName, ResponseBodyExtractionOptions response) {
 
-        return attributeValue = response.xmlPath().getList(attributeName);
+        return  response.xmlPath().getList(attributeName);
 
 
 

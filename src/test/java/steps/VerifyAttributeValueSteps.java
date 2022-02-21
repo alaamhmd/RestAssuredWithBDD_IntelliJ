@@ -8,7 +8,10 @@ import io.restassured.response.Response;
 import org.testng.asserts.SoftAssert;
 import pages.PageBase;
 
-public class VerifyAttributeValueSteps extends PageBase {
+import java.util.List;
+
+public class VerifyAttributeValueSteps  {
+    List<String> attributeValue;
     PageBase pageBase;
     Response response;
     SoftAssert softAssert;
